@@ -1,0 +1,552 @@
+/*========================================== ini style css nya halaman utama ==========================================*/
+
+*{
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	 margin: 0px;
+	 padding: 0px;
+	 font-family: 'open sans',sans-serif;
+	 background-color: white;
+	 overflow-x: hidden;
+}
+
+
+.logo{
+	float: left;
+	text-align: center;
+}
+
+.judul{
+    margin: 0;
+	padding-bottom: 60px;
+	font-size: 57px;
+    background: burlywood;
+	position: relative;
+	text-align: center;
+}
+.nama{
+	font-size: 55px;
+	font-family: 'Bakbak One', cursive;
+}
+.judul ul{
+    font-size: 15px;
+    margin-top: 10px;
+	background: lemonchiffon;
+    float: right;
+	border-radius: 25px 0px 0px 25px;
+	padding: 15px;
+	margin-left: 140px;
+}
+
+.judul ul li a:hover{
+    background: rgba(0, 0, 0, 0.7);
+	color: white;
+	padding: 4px;
+}
+
+.judul ul li{
+    display: inline;
+}
+
+.judul ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 5px 10px;
+	border-radius: 10px ;
+	
+}
+
+
+.menu{
+    float: right;
+}
+
+nav{ 
+    width: 200px;
+}
+
+nav ul{
+	width: 200px;
+	list-style: none;
+    position: absolute;
+	background: blanchedalmond; 
+	border-radius: 10px;
+	box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav ul li a{
+    align-items: center;
+    color: rgb(0, 0, 0);
+    display: flex;   
+    font-size: 1.15em;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    height: 80px;
+    transition: .5s ease;
+}
+
+nav ul li a:hover {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border-radius: 5px;
+}
+
+nav ul ul  {
+    position: absolute;
+    left: 200px;
+    width: 200px;
+    top: 0;
+    background: blanchedalmond;    
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0,  .1);
+    display: none;
+}
+
+nav ul li{
+    position: relative;
+}
+
+nav ul li:hover > ul  {
+    display: initial;
+	
+}
+
+nav ul ul li{ 
+    position: relative;
+    display: initial;
+}
+
+.menu-toggle {
+	display: flex;
+	flex-direction: column;
+	height: 20px;
+	padding-right: 0vh;
+	background-color: burlywood;
+	justify-content: space-between;
+	position: relative;
+	z-index: 1;
+	border:  solid burlywood;
+}
+
+.menu-toggle input{
+	position: absolute;
+	width: 20px;
+	height: 10px;
+	opacity: 0;
+	cursor: pointer;
+	z-index: 2;
+}
+.menu-toggle span{
+	display: block;
+	width: 20px;
+	height: 4px;
+	background-color: black;
+	transition: all 0.5s;
+	margin-left: 5px;
+}
+
+
+/* animasi */
+.menu-toggle span:nth-child(2) {
+	transform-origin: 0 0;
+
+}
+.menu-toggle span:nth-child(4) {
+	transform-origin: 0 100%;
+
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+	transform: rotate(45deg) translate(1px, 1px);
+	background-color: red;
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+	transform: rotate(-45deg) translate(1px, -1px);
+	background-color: red;
+
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+	transform: scale(0);
+	background-color: red;
+
+}
+/*=========================== INI ADALAH ISI ===========================*/
+.isi{
+	margin: 0;
+	padding: 0;
+} 
+
+.kiri{
+	margin-left: 210px;
+}
+
+.kanan{
+	margin-left: 210px;
+}
+
+p{
+    padding-top: 20px;
+    padding: 5px;
+}
+
+h2{
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+/*=========================== INI ADALAH SLIDER ===========================
+
+.malasngoding-slider { 
+	border: 1px solid #000; 
+	overflow: hidden; 
+	position: sticky;
+}
+
+.malasngoding-slider { 
+	margin:20px auto;
+	width: 760px;
+	height: 450px; 
+	overflow: hidden;
+}
+
+.isi-slider img { 
+	width: 768px;
+	height: 450px; 
+	float: left;
+}
+
+.isi-slider { 
+	position: absolute; 
+	width:3900px;  
+	
+
+	/*pengaturan durasi lama tampil gambar bisa di atur di bawah ini
+	animation-name:slider;
+	animation-duration:16s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count:infinite;
+	-webkit-animation-name:slider;
+	-webkit-animation-duration:16s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count:infinite;
+	-moz-animation-name:slider;
+	-moz-animation-duration:16s;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-iteration-count:infinite;
+	-o-animation-name:slider;
+	-o-animation-duration:16s;
+	-o-animation-timing-function: ease-in-out;
+	-o-animation-iteration-count:infinite;
+}
+
+
+/*saat gambar di hover oleh cursor mouse maka berhenti slide
+
+
+
+
+
+@-moz-keyframes slider {     
+	0% {
+		left: 0; opacity: 0; 
+	}     
+	2% {
+		opacity: 1; 
+	}     
+	20% {
+		left: 0; opacity: 1; 
+	}     
+	21% {
+		opacity: 0; 
+	}     
+	24% {
+		opacity: 0; 
+	}     
+	25% {
+		left: -768px; opacity: 1; 
+	}       
+	45% {
+		left: -768px; opacity: 1; 
+	}     
+	46% {
+		opacity: 0; 
+	}     
+	48% {
+		opacity: 0; 
+	}     
+	50% {
+		left: -1536px; opacity: 1; 
+	}     
+	70% {
+		left: -1536px; opacity: 1; 
+	}     
+	72% {
+		opacity: 0; 
+	}     
+	74% {
+		opacity: 0; 
+	}    
+	75% {
+		left: -2304px; opacity: 1; 
+	}   	
+	95% {
+		left: -2304px; opacity: 1; 
+	}   	
+	97% { 
+		left: -2304px; opacity: 0;
+	}   	
+	100% {
+		left: 0; opacity: 0; 
+	}
+} 
+
+@-webkit-keyframes slider {     
+	0% {
+		left: 0; opacity: 0; 
+	}     
+	2% {
+		opacity: 1; 
+	}     
+	20% {
+		left: 0; opacity: 1; 
+	}     
+	21% {
+		opacity: 0; 
+	}     
+	24% {
+		opacity: 0; 
+	}     
+	25% {
+		left: -768px; opacity: 1; 
+	}       
+	45% {
+		left: -768px; opacity: 1; 
+	}     
+	46% {
+		opacity: 0; 
+	}     
+	48% {
+		opacity: 0; 
+	}     
+	50% {
+		left: -1536px; opacity: 1; 
+	}     
+	70% {
+		left: -1536px; opacity: 1; 
+	}     
+	72% {
+		opacity: 0; 
+	}     
+	74% {
+		opacity: 0; 
+	}    
+	75% {
+		left: -2304px; opacity: 1; 
+	}   	
+	95% {
+		left: -2304px; opacity: 1; 
+	}   	
+	97% { 
+		left: -2304px; opacity: 0;
+	}   	
+	100% {
+		left: 0; opacity: 0; 
+	}
+} 
+
+
+@keyframes slider {     
+	0% {
+		left: 0; opacity: 0; 
+	}     
+	2% {
+		opacity: 1; 
+	}     
+	20% {
+		left: 0; opacity: 1; 
+	}     
+	21% {
+		opacity: 0; 
+	}     
+	24% {
+		opacity: 0; 
+	}     
+	25% {
+		left: -768px; opacity: 1; 
+	}     
+	45% {
+		left: -768px; opacity: 1; 
+	}     
+	46% {
+		opacity: 0; 
+	}     
+	48% {
+		opacity: 0; 
+	}     
+	50% {
+		left: -1536px; opacity: 1; 
+	}     
+	70% {
+		left: -1536px; opacity: 1; 
+	}     
+	72% {
+		opacity: 0; 
+	}     
+	74% {
+		opacity: 0; 
+	}    
+	75% {
+		left: -2304px; opacity: 1; 
+	}   	
+	95% {
+		left: -2304px; opacity: 1; 
+	}   	
+	97% { 
+		left: -2304px; opacity: 0; 
+	} 
+
+	100% {
+		left: 0; opacity: 0; 
+	}
+}
+*/
+
+@media (max-width: 600px) {
+	
+
+	.nama{
+		font-size: 35px;
+		font-size: 40px;
+		font-family: 'Bakbak One', cursive;
+	}
+	.logo{
+		text-align: center;
+		float: none;
+	}
+
+	.judul{
+		margin: 0;
+		padding: 0;
+	}
+
+	
+	.judul ul{
+		margin: 0;
+		font-size: 17px;
+		text-transform: capitalize;
+		padding: 2px;
+		padding-left: 25vh;
+		text-align: center;
+		background-color: burlywood;
+		border-radius: 0;
+		border-bottom: burlywood 0.1px solid;
+	}
+
+	.judul ul li a{
+		text-decoration: none;
+		color: black;
+		padding: 10px 5px 10px;
+		border-radius: 10px ;
+		
+	}
+
+	nav ul{
+		width: 100%;
+		display: flex;
+		flex-direction: column; 	/*as flex*/
+		list-style: none;
+    	position: absolute;
+		background-color: blanchedalmond; 
+		font-size: 15px;
+		top: 254.5px;
+		height: 170px;
+		z-index: 1;
+		opacity: 99%;
+		transform: translateX(-100%);
+		transition: all 1s;
+		border-radius: 0;
+		box-shadow: none;
+	}
+
+	/* pembalik */
+	nav ul.slide {
+		transform: translateX(0);
+	}
+
+	nav ul li a{
+		align-items: center;
+		color: #000;
+		display: block;   
+		font-size: 1.15em;
+		text-decoration: none;
+		text-transform: capitalize;
+		padding: 5px 4px;
+		height: 30px;
+		transition: .5s ease;
+	}
+
+	nav ul li a:hover {
+		background: rgba(0, 0, 0, 0.7);
+		color: #fff;
+		border-radius: 10px;
+		padding: 10px;
+	}
+
+	nav ul ul  {
+		position: absolute;
+		background: burlywood;    
+		display: none;
+		margin-left: 110px;
+		width: 150px;
+		margin-bottom: -50px;
+		
+		
+	}
+
+	nav ul li{
+		position: relative;
+	}
+
+	nav ul li:hover > ul  {
+		 display: none;/* as initial */
+		
+	}
+
+	nav ul ul li{ 
+		position: relative;
+    	display: initial;
+		margin-left: -15px;
+	}
+
+	nav ul ul li a{
+		text-align: center;
+		margin-top: -10px;
+		margin-bottom: -10px;
+		
+	}
+
+
+	.kiri{
+		margin-left: 5px;
+		width: 360px;
+	}
+
+	.kanan{
+		margin-left: 5px;
+	}
+	.h2{
+		margin-left: 5px;
+	}
+}
+
+
+@media (min-width: 601px) {
+	.menu-toggle{
+		display: none;
+	}
+}

@@ -1,0 +1,88 @@
+*{
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+    top: 0px;
+	 margin: 0px;
+	 padding: 0px;
+	 font-family: 'open sans',sans-serif;
+	 background-color: white;
+	
+}
+
+.wrapper{
+    width: 100%;
+    margin: auto;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #ffffff;
+    z-index: 1;
+    border-bottom: 1px solid #364f6b;
+}
+     
+
+.logo{
+    margin-top: 10px;
+	float: left;
+	text-align: center;
+}
+
+.judul{
+    margin: 0;
+	padding-bottom: 60px;
+	font-size: 57px;
+    background: burlywood;
+	text-align: center;
+}
+.logo{
+	float: left;
+	text-align: center;
+}
+
+.judul{
+    margin: 0;
+	padding-bottom: 60px;
+	font-size: 57px;
+    background: burlywood;
+	position: relative;
+	text-align: center;
+}
+.nama{
+	font-size: 55px;
+	font-family: 'Bakbak One', cursive;
+}
+.judul ul{
+    font-size: 15px;
+    margin-top: 10px;
+	background: lemonchiffon;
+    float: right;
+	border-radius: 25px 0px 0px 25px;
+	padding: 15px;
+	margin-left: 140px;
+}
+
+.judul ul li a:hover{
+    background: rgba(0, 0, 0, 0.7);
+	color: white;
+	padding: 4px;
+}
+
+.judul ul li{
+    display: inline;
+}
+
+.judul ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 5px 10px;
+	border-radius: 10px ;
+	
+}
+
+.menu{
+    float: right;
+}
